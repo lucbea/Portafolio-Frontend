@@ -11,7 +11,13 @@ body {
     /* padding: 10px; */
     min-width:524px;
 }
-
+.contenedor{
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    top:0;
+    left: 0px;
+    width:100%;
+}
 main {
     /* position: absolute; */
     /* top: 0; */
@@ -24,13 +30,13 @@ main {
     width: calc(100%+40px);
     
 }
-.contenedor{
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    top:0;
-    left: 0px;
-    width:100%;
-}
+section {
+    position: relative;
+    left: 0;
+    width: -webkit-fill-available;
+    margin-left: -20px;
+ }
+
 .sombraBarraVertical {
     position: fixed;
     z-index: 200;
@@ -45,7 +51,7 @@ main {
     display: none;
 } */
 
-#hola,  .mensaje, .comillas, #proyectos, #datosContacto{
+#hola,  .mensaje, #proyectos, #datosContacto{
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -117,48 +123,65 @@ button a{
     width:inherit;
     object-fit: cover;
 }
- section {
-    position: relative;
-    left:0;
-    width: we;
-    margin-left: -20px;
- }
+ 
  #conocimientos, .mensaje{
-    width: inherit;
+    /* width: inherit; */
  }
 #conocimientos{
-    position:relative;
+    /* position:relative;
     left:-10;
-    z-index:2;
+    z-index:2; */
     background-color: #f4f5f9;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    padding:15px 40px 80px; 
+    padding: 15px 40px 130px;
    
       
 }
-#conocimientos h2{
+#conocimientos h2, #proyectos h2{
     font-size: 45px;
     font-weight: 900;
-    padding-bottom:5px
+    padding: 25px 0px 15px;
+
   
 }
 #conocimientos p{
     width: 400px;
 }
 .iconosConocim{
-    display:grid;
-    grid-template-columns: repeat(5, 20px, 1fr, 1fr, 1fr, 20px);
-    gap:20px
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 10px;
+    max-width:840px;
+}
+.iconoImgTexto{
+    width:260px;
+    height:230px;
+    border-radius: 10px;
+    background-color: white;
+    border:1px solid rgb(220, 210, 224);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.iconoImgTexto:hover{
+    border:1px solid #8338ec;
+    color:#6c2ec2;
 }
 .icono{
-    width:290px;
+    /* width:290px;
     height:290px;
     border-radius: 10px;
     background-color: white;
-    border-color:1px solid aqua;
+    border-color:1px solid aqua; */
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -166,14 +189,53 @@ button a{
 
 }
 .icono img{
-    width:100px;
+    width:90px;
+
 }
+.iconoImgTexto h3{
+    margin-top:20px;
+}
+
+
 .mensaje{
     background-color: #7772bc;
-    /* z-index:3; */
-    
-    /* width: max-content; */
+    height:auto;
 }
+.mensaje:hover{
+    background: linear-gradient(to top, #8338ec, #9590d1);
+}
+.comillas{
+ height: 350px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.comillas p, .proyectos p{
+    color: white;
+    padding: 30px 10px;
+    font-size: 20px;
+}
+
+.comillas h3{
+    font-size: 26px;
+    color: white;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+#proyectos{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding:0px 40px 80px;   
+    width:100%;
+}
+
+
+
 
 #datosContacto{
     width: 80%;
@@ -195,7 +257,7 @@ header{
 nav{
     height: 80px;
     box-shadow: 0px 0px 21px 0px #0000002e;
-    padding-right: 50px;
+    padding-right: 110px;
 }
 ul {
     /* display: visible; */
