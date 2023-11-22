@@ -9,76 +9,75 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     /* padding: 10px; */
-    min-width:524px;
+    min-width: 524px;
 }
-.contenedor{
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    top:0;
+
+.contenedor {
+    top: 0;
     left: 0px;
-    width:100%;
+    width: 100%;
 }
+
 main {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* z-index:2; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: calc(100%+40px);
-    
+
 }
+
 section {
     position: relative;
     left: 0;
     width: -webkit-fill-available;
     margin-left: -20px;
- }
+}
 
 .sombraBarraVertical {
     position: fixed;
     z-index: 200;
     top: 0;
     left: 100%;
-    width:40px;
+    width: 40px;
     height: 100%;
     box-shadow: 0px 0px 40px 0px #000000d9;
 }
- 
-/* nav {
-    display: none;
-} */
 
-#hola,  .mensaje, #proyectos, #datosContacto{
-    display:flex;
+
+/* Sección Hola - Inicio */
+#hola {
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    padding:90px 40px 80px;   
-    width:100%;
+    padding: 90px 40px 80px;
+    width: 100%;
 }
-
-h1{
+.holaInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 10px;
-    color:#645cd5;
+    color: #645cd5;
 }
 
-h2{
+h2 {
     font-size: 30px;
     font-weight: 900;
     margin-top: 100px;
     margin-bottom: 15px;
 }
 
-
-#hola #comentario{
+/* #hola #comentario{
     width: 30px;
-}
-p{
+} */
+p {
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -86,71 +85,80 @@ p{
     font-style: inherit;
     color: rgb(100, 98, 98);
     line-height: 1.5;
-    width:470px;
+    width: 470px;
 }
 
-button{
-    display:flex;
+button {
+    display: flex;
     align-items: center;
     width: auto;
     height: 50px;
     margin-bottom: 40px;
-    padding:18px 40px;
+    padding: 18px 40px;
     border-radius: 50px;
     border: none;
-    background-color: #645cd5;
+    background-color: #7671bd;
     color: white;
     font-weight: 500;
     font-family: Montserrat;
     font-size: 16px;
 }
-button a{
+
+button a {
     color: white;
 }
-.imagen{
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    padding-block:15px; 
-    padding-bottom: 20px;  
-    width:560px;
+
+button:hover {
+    background-color: #645cd5;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 0px #3f3b3ba1;
 }
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 15px;
+    padding-bottom: 20px;
+    width: 560px;
+}
+
 .imagen img {
-    width:100%;
+    width: 100%;
     height: auto;
     object-fit: contein;
-    width:inherit;
+    width: inherit;
     object-fit: cover;
 }
- 
- #conocimientos, .mensaje{
-    /* width: inherit; */
- }
-#conocimientos{
-    /* position:relative;
-    left:-10;
-    z-index:2; */
+
+/* Sección Hola - Final */
+
+/* Sección Conocimientos - Inicio */
+/* #conocimientos, .mensaje{ */
+/* width: inherit; */
+/* } */
+#conocimientos {
     background-color: #f4f5f9;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 40px 130px;
-   
-      
+    padding: 15px 0px 130px 15px;
+    min-width: 520px;
 }
-#conocimientos h2, #proyectos h2{
+
+#conocimientos h2 {
     font-size: 45px;
     font-weight: 900;
     padding: 25px 0px 15px;
-
-  
 }
-#conocimientos p{
+
+#conocimientos p {
     width: 400px;
 }
-.iconosConocim{
+
+.iconosConocim {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -159,94 +167,176 @@ button a{
     column-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     padding: 20px 10px;
-    max-width:840px;
+    max-width: 840px;
+    /* min-width: 520px; */
 }
-.iconoImgTexto{
-    width:260px;
-    height:230px;
+
+.conocimImgTexto {
+    width: 260px;
+    height: 230px;
     border-radius: 10px;
     background-color: white;
-    border:1px solid rgb(220, 210, 224);
-    display:flex;
-    flex-direction:column;
+    border: 1px solid rgb(220, 210, 224);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.iconoImgTexto:hover{
-    border:1px solid #8338ec;
-    color:#6c2ec2;
+
+.conocimImgTexto:hover {
+    border: 1px solid #8338ec;
+    color: #6c2ec2;
 }
-.icono{
-    /* width:290px;
-    height:290px;
-    border-radius: 10px;
-    background-color: white;
-    border-color:1px solid aqua; */
-    display:flex;
-    flex-direction:column;
+
+
+
+.conocimImgTexto h3 {
+    margin-top: 20px;
+}
+
+/* Sección Conocimientos - Final */
+
+/* Sección Cita/Mensaje - Inicio */
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-.icono img{
-    width:90px;
-
-}
-.iconoImgTexto h3{
-    margin-top:20px;
-}
-
-
-.mensaje{
+    width: 100%;
+    height: auto;
+    padding: 90px 40px 80px;
     background-color: #7772bc;
-    height:auto;
 }
-.mensaje:hover{
+
+.mensaje:hover {
     background: linear-gradient(to top, #8338ec, #9590d1);
 }
-.comillas{
- height: 350px;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- align-items: center;
+
+.comillas {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.comillas p, .proyectos p{
+.comillas p,
+.proyectos p {
     color: white;
     padding: 30px 10px;
     font-size: 20px;
 }
 
-.comillas h3{
+.comillas h3 {
     font-size: 26px;
     color: white;
     font-weight: 900;
     padding-bottom: 20px;
 }
 
-#proyectos{
-    display:flex;
+/* Sección Cita/Mensaje - Final */
+
+/* Sección Proyectos - Inicio */
+#proyectos {
+    background-color: #f4f5f9;
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    padding:0px 40px 80px;   
-    width:100%;
+    padding: 15px 70px 0px 90px;
+    min-width: 520px;
+    width: 100%;
+}
+
+#proyectos h2 {
+    font-size: 45px;
+    font-weight: 900;
+    padding: 25px 0px 15px;
+}
+
+.contenedorIconosProyecto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(241, 174, 149);
+    /* padding: 0px 50px; */
+}
+
+.iconosProyecto {
+    display: grid;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 25px;
+    column-gap: 25px;
+    /* grid-template-columns: repeat(auto-fill, minmax(0, 1fr)); */
+    /* grid-template-columns: repeat(3, minmax(min(100%, 300px), 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    width: calc(96% + 40px);
+    background-color: aliceblue;
+    padding: 20px 0px;
+    /* max-width: 860px; */
+    min-width: 520px;
+}
+
+.proyectoImgTexto {
+    width: 100%;
+    height: 278px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(220, 210, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 35px 30px 40px;
+    /* margin: 15px; */
+    overflow: hidden;
 }
 
 
-
-
-#datosContacto{
-    width: 80%;
-    height:auto;
-    border-radius: 30px;
-    background-color: rgb(243, 225, 225);
+.imagenProyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px 15px;
 }
 
+.imagenProyecto img {
+    height: inherit;
+    /* aspect-ratio: 3/4; */
+    object-fit: cover;
+    padding: 20px;
+}
+/* .proyectoImgTexto .imagenProyecto img {
+    width: inherit;
+} */
 
-header{
-    display:none;
+.proyectoImgTexto h3 {
+    margin-top: 20px;
+    text-align: center;
+    width: 240;
+    font-size: 15px;
+}
+
+/* .alineacIzq{
+    justify-content: flex-start;
+} */
+
+/* Sección Proyectos Final */
+
+
+
+
+
+/* Sección Header Inicio */
+
+header {
+    /* display:none; */
     position: fixed;
     top: 0;
     right: 0;
@@ -254,42 +344,224 @@ header{
     width: inherit;
     background-color: white;
 }
-nav{
+
+nav {
     height: 80px;
     box-shadow: 0px 0px 21px 0px #0000002e;
     padding-right: 110px;
 }
+
 ul {
     /* display: visible; */
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
-    align-items: center;  
+    align-items: center;
 }
 
-li{
-    display:flex;
+li {
+    display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     padding: 20px 20px;
 }
+
 .enlaceDestacado a {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 7px 15px;
     width: 150px;
-    background-color:#7772bc;
+    background-color: #7772bc;
     border-radius: 50px;
     color: white;
 }
-a{
+
+a {
     text-decoration: none;
-    color:rgb(26, 25, 25);
+    color: rgb(26, 25, 25);
 }
-@media (max-widht:970px) {
+
+/* Sección header Final */
+
+
+
+/* #datosContacto{
+    width: 100%;
+    height:auto;
+    border-radius: 30px;
+    background-color: rgb(243, 225, 225);
+    padding: 25px 0px 15px; 
+} */
+
+#datosContacto {
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: 50% 50%;
+    background-color: #f3f2ec;
+    padding: 110px 60px 60px 60px;
+}
+
+#datosContacto h2 {
+    font-size: 45px;
+    font-weight: 900;
+    padding-bottom: 40px;
+    margin: 0px;
+
+}
+
+.contactame {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactame p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 0px 40px;
+    color: rgb(36, 36, 36);
+    width: 470px;
+}
+
+/* Formulario de contacto - Inicio */
+.nombreApellido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.ingresoDato {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+input, textarea {
+    /* width:50px; */
+    height: 30px;
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 10px 0px 40px;
+    padding: 18px 15px;
+    color: rgb(100, 98, 98);
+    border: none;
+    /* outline-color: #6c2ec2; */
+    border-radius: 25px;
+}
+
+/* input:focus, textarea:focus {
+    box-shadow: 0 0 px rgba(146, 89, 190, 0.411);
+    outline: none;
+    border-radius: 25px;
+} */
+#mensaje{
+    height: 130px;
+    align-items: flex-start;
+}
+i{
+    height: auto;
+    position:relative;
+    top:10px;
+}
+.ingresoDatos{
+    height:inherit;
+}
+.icon-valid {
+    color: #88c459;
+  }
+  
+  .icon-invalid {
+    color: #f5414f;
+  }
+.icon-invalid,
+.icon-valid {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transform: translateY(50%);
+}
+/* input:active{
+    background-color: #6314d1;
+} */
+
+/* input:invalid:not(:placeholder-shown):focus{
+    box-shadow: 0 0 2px rgba(191, 148, 223, 0.913);
+} */
+
+/* esto lo agregué copiado */
+/* ingreso formulario - esperando datos - borde lila */
+input:focus, textarea:focus, button:focus, a:focus { 
+  box-shadow: 0px 0px 10px #6031a2;
+  outline: 0;
+}
+
+/* ingreso formulario - */
+input:valid:focus,
+textarea:valid:focus {
+  box-shadow: 0px 0px 50px #88c459;
+}
+
+input:invalid:not(:placeholder-shown):focus,
+textarea:invalid:not(:placeholder-shown):focus {
+  box-shadow: 0px 0px 5px #f5414f;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border: 1px solid #f5414f;
+}
+
+input:valid
+/* textarea:valid  */
+{
+  border: 1px solid #88c459;
+}
+/* iconos de valido o inválido para cada dato no mostrado */
+.icon-invalid,
+.icon-valid {
+  display: block;
+  /* position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transform: translateY(50%); */
+}
+
+.icon-valid {
+  color: #88c459;
+}
+
+.icon-invalid {
+  color: #f5414f;
+}
+
+input:valid ~ .icon-valid,
+textarea:valid ~ .icon-valid,
+input:not(:placeholder-shown):invalid ~ .icon-invalid,
+textarea:not(:placeholder-shown):invalid ~ .icon-invalid {
+  display: block;
+} 
+
+input:valid ~ .icon-valid,
+input:not(:placeholder-shown):invalid ~ .icon-invalid {
+    display: block;
+}
+
+/* Fin de lo que agregué copiado */
+
+
+
+/* Formulario de contacto - Final */
+/* @media (min-widht:970px) {
+    header{
+        visibility: visible;
+    }
 
     
-}
-
+} */
