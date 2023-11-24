@@ -28,10 +28,12 @@ main {
 }
 
 section {
-    position: relative;
+    /* position: relative;
     left: 0;
-    width: -webkit-fill-available;
-    margin-left: -20px;
+    width: -webkit-fill-available; */
+    /* margin-left: -20px; */
+    width:100%;
+    margin: auto;
 }
 
 .sombraBarraVertical {
@@ -44,7 +46,69 @@ section {
     box-shadow: 0px 0px 40px 0px #000000d9;
 }
 
+/* Sección Header Inicio */
 
+header {
+    /* display:none; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: inherit;
+    background-color: white;
+}
+
+nav {
+    height: 80px;
+    box-shadow: 0px 0px 21px 0px #0000002e;
+    padding-right: 110px;
+}
+
+ul {
+    /* display: visible; */
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 20px 20px;
+}
+
+.enlaces li a:hover {
+    color: #8338ec;
+}
+
+.enlaces .enlaceDestacado a:hover {
+    color: white;
+}
+
+.enlaceDestacado a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    width: 150px;
+    background-color: #8338ec;
+    border-radius: 50px;
+    color: white;
+}
+
+.enlaceDestacado:hover {
+    background-color: 995cef;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+}
+
+/* Sección header Final */
 /* Sección Hola - Inicio */
 #hola {
     display: flex;
@@ -54,12 +118,14 @@ section {
     padding: 90px 40px 80px;
     width: 100%;
 }
-.holaInfo{
+
+.holaInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     font-size: 60px;
     font-weight: 900;
@@ -184,7 +250,7 @@ button:hover {
 }
 
 .conocimImgTexto:hover {
-    border: 1px solid #8338ec;
+    border: 1px solid #6c2ec2;
     color: #6c2ec2;
 }
 
@@ -239,7 +305,6 @@ button:hover {
 
 /* Sección Proyectos - Inicio */
 #proyectos {
-    background-color: #f4f5f9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,41 +324,46 @@ button:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: rgb(241, 174, 149);
-    /* padding: 0px 50px; */
 }
 
 .iconosProyecto {
     display: grid;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
     align-items: center;
     row-gap: 25px;
     column-gap: 25px;
-    /* grid-template-columns: repeat(auto-fill, minmax(0, 1fr)); */
-    /* grid-template-columns: repeat(3, minmax(min(100%, 300px), 1fr)); */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
     width: calc(96% + 40px);
-    background-color: aliceblue;
     padding: 20px 0px;
-    /* max-width: 860px; */
-    min-width: 520px;
+    margin:auto;
+    /* min-width: 520px; */
 }
 
 .proyectoImgTexto {
     width: 100%;
     height: 278px;
-    border-radius: 10px;
     background-color: white;
-    border: 1px solid rgb(220, 210, 224);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     padding: 35px 30px 40px;
-    /* margin: 15px; */
     overflow: hidden;
 }
+
+.enlaceProy {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(220, 210, 224);
+    border-radius: 10px;
+}
+
+.enlaceProy:hover {
+    border: 1px solid #6c2ec2;
+    color: #6c2ec2;
+    border-radius: 10px;
+}
+
 
 
 .imagenProyecto {
@@ -308,13 +378,9 @@ button:hover {
 
 .imagenProyecto img {
     height: inherit;
-    /* aspect-ratio: 3/4; */
     object-fit: cover;
     padding: 20px;
 }
-/* .proyectoImgTexto .imagenProyecto img {
-    width: inherit;
-} */
 
 .proyectoImgTexto h3 {
     margin-top: 20px;
@@ -323,9 +389,7 @@ button:hover {
     font-size: 15px;
 }
 
-/* .alineacIzq{
-    justify-content: flex-start;
-} */
+
 
 /* Sección Proyectos Final */
 
@@ -333,57 +397,7 @@ button:hover {
 
 
 
-/* Sección Header Inicio */
 
-header {
-    /* display:none; */
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    width: inherit;
-    background-color: white;
-}
-
-nav {
-    height: 80px;
-    box-shadow: 0px 0px 21px 0px #0000002e;
-    padding-right: 110px;
-}
-
-ul {
-    /* display: visible; */
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 20px 20px;
-}
-
-.enlaceDestacado a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 15px;
-    width: 150px;
-    background-color: #7772bc;
-    border-radius: 50px;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(26, 25, 25);
-}
-
-/* Sección header Final */
 
 
 
@@ -394,37 +408,105 @@ a {
     background-color: rgb(243, 225, 225);
     padding: 25px 0px 15px; 
 } */
+.contenedorContacto{
+    margin:auto;
+    background-color: #e9ece69c;
+    padding: 200px 0px;
+}
 
 #datosContacto {
     display: grid;
     column-gap: 40px;
     grid-template-columns: 50% 50%;
-    background-color: #f3f2ec;
-    padding: 110px 60px 60px 60px;
+    /* background-color: #f3f2ec; */
+    padding: 90px 100px 50px 60px;
+    width: 1060px;
+    margin:auto;
+    border:1px solid rgb(226, 223, 223);
+    border-radius: 20px;
+    background-color: white;
+    
 }
 
 #datosContacto h2 {
     font-size: 45px;
     font-weight: 900;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin: 0px;
-
 }
 
 .contactame {
     display: flex;
     flex-direction: column;
-
 }
 
 .contactame p {
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    margin: 0px 0px 40px;
+    margin: 0px 0px 20px;
     color: rgb(36, 36, 36);
-    width: 470px;
+    width: 400px;
 }
+
+/* .iconosRedes {
+    background-color: lightblue; 
+} */
+.redesColor {
+    color: #8338ec;
+    /* height: 80px; */
+    /* display: flex; */
+    /* flex-direction: row; */
+
+    /* display:grid; */
+    /* grid-template-columns: 100px 1fr; */
+    /* background-color: yellow; */
+}
+
+.redes {
+    margin: 10px 0px;
+    /* height: 100%; */
+    width: 250px;
+    height: min-content;
+    /* background-color: orange; */
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color:rgb(27, 25, 25)w;
+
+}
+
+.iconoRed {
+    position: relative;
+    top: 0px;
+    margin: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color:white;
+    font-size: 20px;
+    color:#8338ec;
+}
+.icono{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.redesColor:hover .iconoRed{
+    background-color:#8338ec;
+    color:white;
+}
+.redesColor:hover .redes{
+    color:#8338ec;
+}
+
+
 
 /* Formulario de contacto - Inicio */
 .nombreApellido {
@@ -437,20 +519,26 @@ a {
 .ingresoDato {
     display: flex;
     flex-direction: column;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color:rgb(27, 25, 25);
 }
 
-input, textarea {
+input,
+textarea {
     /* width:50px; */
     height: 30px;
     font-family: Montserrat, sans-serif;
     text-align: left;
     font-size: 12px;
     font-weight: 500;
-    margin: 10px 0px 40px;
+    margin: 10px 0px 20px;
     padding: 18px 15px;
-    color: rgb(100, 98, 98);
-    border: none;
+    /* revisar el color de los input */
+    color: #5070f0; 
+    background-color: #f1f8fb; 
+    border: #f6f7fb;
+    /* revisar el color de los input */
     /* outline-color: #6c2ec2; */
     border-radius: 25px;
 }
@@ -460,33 +548,39 @@ input, textarea {
     outline: none;
     border-radius: 25px;
 } */
-#mensaje{
-    height: 130px;
+#mensaje {
+    height: 170px;
     align-items: flex-start;
 }
-i{
+
+i {
     height: auto;
-    position:relative;
-    top:10px;
+    position: relative;
+    top: 10px;
 }
-.ingresoDatos{
-    height:inherit;
+
+.ingresoDatos {
+    height: inherit;
+    
 }
+
 .icon-valid {
     color: #88c459;
-  }
-  
-  .icon-invalid {
+}
+
+.icon-invalid {
     color: #f5414f;
-  }
+}
+
 .icon-invalid,
 .icon-valid {
-  display: none;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  transform: translateY(50%);
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: translateY(50%);
 }
+
 /* input:active{
     background-color: #6314d1;
 } */
@@ -497,64 +591,90 @@ i{
 
 /* esto lo agregué copiado */
 /* ingreso formulario - esperando datos - borde lila */
-input:focus, textarea:focus, button:focus, a:focus { 
-  box-shadow: 0px 0px 10px #6031a2;
-  outline: 0;
+input:focus,
+textarea:focus,
+button:focus {
+    box-shadow: 0px 0px 10px #6031a2;
+    outline: 0;
 }
 
 /* ingreso formulario - */
 input:valid:focus,
 textarea:valid:focus {
-  box-shadow: 0px 0px 50px #88c459;
+    box-shadow: 0px 0px 50px #88c459;
 }
 
 input:invalid:not(:placeholder-shown):focus,
 textarea:invalid:not(:placeholder-shown):focus {
-  box-shadow: 0px 0px 5px #f5414f;
+    box-shadow: 0px 0px 5px #f5414f;
 }
 
 input:invalid:not(:placeholder-shown),
 textarea:invalid:not(:placeholder-shown) {
-  border: 1px solid #f5414f;
+    border: 1px solid #f5414f;
 }
 
 input:valid
+
 /* textarea:valid  */
-{
-  border: 1px solid #88c459;
+    {
+    border: 1px solid #88c459;
 }
+
 /* iconos de valido o inválido para cada dato no mostrado */
 .icon-invalid,
 .icon-valid {
-  display: block;
-  /* position: absolute;
+    display: block;
+    /* position: absolute;
   bottom: 20px;
   right: 20px;
   transform: translateY(50%); */
 }
 
 .icon-valid {
-  color: #88c459;
+    color: #88c459;
 }
 
 .icon-invalid {
-  color: #f5414f;
+    color: #f5414f;
 }
 
-input:valid ~ .icon-valid,
-textarea:valid ~ .icon-valid,
-input:not(:placeholder-shown):invalid ~ .icon-invalid,
-textarea:not(:placeholder-shown):invalid ~ .icon-invalid {
-  display: block;
-} 
-
-input:valid ~ .icon-valid,
-input:not(:placeholder-shown):invalid ~ .icon-invalid {
+input:valid~.icon-valid,
+textarea:valid~.icon-valid,
+input:not(:placeholder-shown):invalid~.icon-invalid,
+textarea:not(:placeholder-shown):invalid~.icon-invalid {
     display: block;
 }
 
-/* Fin de lo que agregué copiado */
+input:valid~.icon-valid,
+input:not(:placeholder-shown):invalid~.icon-invalid {
+    display: block;
+}
+input[type="Submit"]{
+    background-color: #8338ec;
+    border:1px solid #8338ec;
+    width:136px;
+    height:50px;
+    color:white;
+    font-size: 1rem;
+    padding: 0px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+   
+}
+input[type="Submit"]:hover{
+    background-color: #6c2ec2;
+    cursor: pointer;
+}
 
+
+/* Fin de lo que agregué copiado */
+/* Seccion contactame */
+
+
+
+/* Fin sección Contactame */
 
 
 /* Formulario de contacto - Final */
