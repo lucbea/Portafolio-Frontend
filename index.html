@@ -171,10 +171,6 @@
                             </a>
 
                         </div>
-
-
-
-
                     </div>
                 </div>
             </section>
@@ -187,7 +183,7 @@
                             <div class="iconosRedes">
                                 <div class="redesColor">
                                     <a class="redes" href="https://github.com/lucbea">
-                                        <div class="icono"><i class="fa-brands fa-github-alt iconoRed"></i>LucBer</div>
+                                        <div class="icono"><i class="fa-brands fa-github-alt iconoRed"></i>LucBea</div>
                                     </a>
                                 </div>
                                 <div class="redesColor">
@@ -204,9 +200,6 @@
                                         </div>
                                     </a>
                                 </div>
-
-
-
                             </div>
                         </div>
                         <div class="escribime">
@@ -215,24 +208,25 @@
                                 <div class="nombreApellido">
                                     <div class="ingresoDato">
                                         <label for="nombre">Nombre *</label>
-                                        <div class="ingresoDatos"><input type="text" name="nombre" id="nombre"
-                                                placeholder="p. ej.: Juan" required>
-                                            <i class="fa fa-times-circle-o icon-invalid" aria-hidden="true"></i>
-                                            <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
-                                            <!-- <i class="fa-light fa-circle-check icon-valid"></i>
-                                <i class="fa-light fa-circle-check"></i> -->
-                                        </div>
+                                        <input type="text" name="nombre" id="nombre" placeholder="p. ej.: Juan"
+                                            required>
+                                        <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+                                        <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
                                     </div>
                                     <div class="ingresoDato">
                                         <label for="apellido">Apellido *</label>
                                         <input type="text" name="apellido" id="apellido" placeholder="p. ej.: Pérez"
                                             required>
+                                        <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+                                        <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
                                     </div>
                                 </div>
                                 <div class="ingresoDato">
                                     <label for="email">Email *</label>
                                     <input type="email" name="email" id="email"
                                         placeholder="p. ej.: juanPerez@gmail.com" required>
+                                    <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+                                    <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
                                 </div>
                                 <div class="ingresoDato">
                                     <label for="mensaje">Mensaje *</label>
@@ -245,14 +239,31 @@
                     </div>
                 </div>
             </section>
-
-
         </main>
         <footer>
-            <div class="iconosSolos">
-
+            <div class="contenedorEnlacesFooter">
+                <ul id="enlacesFooter">
+                    <li><a href="#hola">HOLA</a></li>
+                    <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
+                    <li><a href="#proyectos">PROYECTOS</a></li>
+                    <li><a href="#datosContacto">CONTACTO</a></li>
+                </ul>
             </div>
-            <p class="comentario">Hecho con ♥ por LucBer</p>
+            <div class="contenedorIconosFooter">
+                <a class="iconosFooter" href="https://github.com/lucbea">
+                    <i class="fa-brands fa-github-alt iconoRedFooter"></i>
+                </a>
+                <a class="iconosFooter" href="">
+                    <i class="fa-brands fa-linkedin-in iconoRedFooter"></i>
+                </a>
+                <a class="iconosFooter" href="">
+                    <i class="fa-solid fa-envelope iconoRedFooter"></i>
+                </a>
+            </div>
+            <div class="copyrigth">
+                <p>Hecho con <span>❤️</span> por LucBea</p>
+            </div>
+
         </footer>
 
     </div>

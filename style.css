@@ -201,9 +201,7 @@ button:hover {
 /* Sección Hola - Final */
 
 /* Sección Conocimientos - Inicio */
-/* #conocimientos, .mensaje{ */
-/* width: inherit; */
-/* } */
+
 #conocimientos {
     background-color: #f4f5f9;
     display: flex;
@@ -333,8 +331,8 @@ button:hover {
     column-gap: 25px;
     grid-template-columns: repeat(3,1fr);
     width: calc(96% + 40px);
-    padding: 20px 0px;
-    margin:auto;
+    padding: 20px 0px 140px 0px;
+    margin: auto;
     /* min-width: 520px; */
 }
 
@@ -409,9 +407,9 @@ button:hover {
     padding: 25px 0px 15px; 
 } */
 .contenedorContacto{
-    margin:auto;
+    margin: auto;
     background-color: #e9ece69c;
-    padding: 200px 0px;
+    padding: 200px 0px 130px 0px;
 }
 
 #datosContacto {
@@ -420,12 +418,12 @@ button:hover {
     grid-template-columns: 50% 50%;
     /* background-color: #f3f2ec; */
     padding: 90px 100px 50px 60px;
-    width: 1060px;
-    margin:auto;
-    border:1px solid rgb(226, 223, 223);
+    width: 82%;
+    min-width: 850px;
+    margin: auto;
+    border: 1px solid rgb(226, 223, 223);
     border-radius: 20px;
     background-color: white;
-    
 }
 
 #datosContacto h2 {
@@ -522,32 +520,24 @@ button:hover {
     font-size: 16px;
     font-weight: 600;
     color:rgb(27, 25, 25);
+    position: relative;
 }
 
 input,
 textarea {
-    /* width:50px; */
-    height: 30px;
-    font-family: Montserrat, sans-serif;
-    text-align: left;
-    font-size: 12px;
-    font-weight: 500;
-    margin: 10px 0px 20px;
-    padding: 18px 15px;
-    /* revisar el color de los input */
-    color: #5070f0; 
-    background-color: #f1f8fb; 
-    border: #f6f7fb;
-    /* revisar el color de los input */
-    /* outline-color: #6c2ec2; */
-    border-radius: 25px;
+        height: 30px;
+        font-family: Montserrat, sans-serif;
+        text-align: left;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 10px 0px 20px;
+        padding: 18px 15px;
+        color: #3d3b3c;
+        background-color: #f1f8fb;
+        border:1px solid #f1f8fb;
+        border-radius: 25px;
 }
 
-/* input:focus, textarea:focus {
-    box-shadow: 0 0 px rgba(146, 89, 190, 0.411);
-    outline: none;
-    border-radius: 25px;
-} */
 #mensaje {
     height: 170px;
     align-items: flex-start;
@@ -601,7 +591,7 @@ button:focus {
 /* ingreso formulario - */
 input:valid:focus,
 textarea:valid:focus {
-    box-shadow: 0px 0px 50px #88c459;
+    box-shadow: 0px 0px 5px #88c459;
 }
 
 input:invalid:not(:placeholder-shown):focus,
@@ -624,11 +614,12 @@ input:valid
 /* iconos de valido o inválido para cada dato no mostrado */
 .icon-invalid,
 .icon-valid {
-    display: block;
-    /* position: absolute;
-  bottom: 20px;
-  right: 20px;
-  transform: translateY(50%); */
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: translateY(50%);
+    z-index:20;
 }
 
 .icon-valid {
@@ -639,11 +630,11 @@ input:valid
     color: #f5414f;
 }
 
-input:valid~.icon-valid,
-textarea:valid~.icon-valid,
-input:not(:placeholder-shown):invalid~.icon-invalid,
-textarea:not(:placeholder-shown):invalid~.icon-invalid {
-    display: block;
+input:valid ~ .icon-valid,
+textarea:valid ~ .icon-valid,
+input:not(:placeholder-shown):invalid ~ .icon-invalid,
+textarea:not(:placeholder-shown):invalid ~ .icon-invalid {
+  display: block;
 }
 
 input:valid~.icon-valid,
@@ -685,3 +676,72 @@ input[type="Submit"]:hover{
 
     
 } */
+footer{
+    width:100%;
+    /* height:300px; */
+    height: 320px;
+    background-color: #8338ec;
+    
+    /* display: flex; */
+    
+
+
+}
+.contenedorEnlacesFooter{
+   width:auto;
+   margin:auto;
+   margin-inline: auto;
+}
+
+#enlacesFooter{
+    width:530px;
+    margin:auto;
+}
+
+#enlacesFooter a{
+    font-size: 14px;
+    color:white;
+    margin:60px 0px 0px;
+    
+}
+.contenedorIconosFooter{
+    width:180px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    
+}
+.iconoRedFooter{
+    margin:25px 10px 45px;
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color:white;
+    font-size: 20px;
+    color:#8338ec;
+    border:1px solid #8338ec;
+}
+
+.iconoRedFooter:hover{
+    background-color:#8338ec;
+    color:white;
+    border:1px solid white;
+}
+.copyrigth{
+    width:470px;
+    margin: auto;
+}
+footer p{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px 0px 10px;
+        font-style: inherit;
+        color: white;
+        line-height: 1.5;    
+}
+ 
