@@ -2,15 +2,19 @@
     ul.enlacesInicio {
         display: none;
     }
+
     .modal{
         display: block;
     }
+
     #hola{
         flex-direction:column;
     }
+
     .iconosProyecto{
         grid-template-columns: repeat(2, 1fr);
     }
+
     #datosContacto{
         display:flex;
         flex-direction: column;
@@ -19,6 +23,7 @@
     .contactame{
         margin-bottom:50px;
     }
+
     .redesColor{
         height: auto;
     }
@@ -27,23 +32,26 @@
         display:flex;
         flex-direction: column;
         justify-content: space-around;
-    }
-    
-       
+    }       
 }
+
 @media (max-width:699px) and (min-width:500px) {
     ul.enlacesInicio {
         display: none;
     }
+
     .modal{
         display: block;
     }
+
     #hola{
         flex-direction:column;
     }
+
     .iconosProyecto{
         grid-template-columns: 1fr;
     }
+
     #datosContacto{
         display:flex;
         flex-direction: column; 
@@ -52,6 +60,7 @@
     .contactame{
         margin-bottom:50px;
     }
+
     .redesColor{
         height: auto;
     }
@@ -61,32 +70,39 @@
         flex-direction: column;
         justify-content: space-around;
     }
+
     .escribime{
         width:90%;
         margin: auto;
     }
+
     footer{
         height:170px;
     }
+
     .contenedorEnlacesFooter{
         display:none;
     }
+
     .contenedorIconosFooter{
         padding-top: 20px;
         height: 100px;
     }
-
 }
+
 @media (max-width:499px){
     ul.enlacesInicio {
         display: none;
     }
+
     .modal{
         display: block;
     }
+
     #hola{
         flex-direction:column;
     }
+
     #datosContacto{
         display:flex;
         flex-direction: column;
@@ -95,10 +111,12 @@
     .contactame{
         margin-bottom:50px;
     }
+
     .nombreApellido{
         display:flex;
         flex-direction:column;
     }
+
     .redesColor{
         height: auto;
     }
@@ -108,16 +126,20 @@
         flex-direction: column;
         justify-content: space-around;
     }
+
     .escribime{
         width:90%;
         margin: auto;
     }
+
     footer{
         height:170px;
     }
+
     .contenedorEnlacesFooter{
         display:none;
     }
+    
     .contenedorIconosFooter{
         padding-top: 20px;
         height: 100px;
