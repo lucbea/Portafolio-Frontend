@@ -40,6 +40,7 @@ section {
     box-shadow: 0px 0px 40px 0px #000000d9;
 }
 
+
 /* Sección Header Inicio */
 
 header {
@@ -72,6 +73,7 @@ li {
     list-style: none;
     padding: 10px 10px;
 }
+
 a {
     text-decoration: none;
     outline:0;
@@ -81,21 +83,17 @@ a {
 }
 
 .enlaceSinDestacar a:hover {
-    background-color: linear-gradient (to top, #bc87df, #54506b);
     text-shadow: 0px 0px 1px #4c4949;
 }
 
 .enlaceDestacado a:hover {
     color: white;
+    background: linear-gradient(to top, #54506b, #bc87df);
     box-shadow: 0px 1px 2px 0px #272525;
 }
 
 .enlaceDestacado a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 10px 15px;
-    width: 150px;
     box-shadow: 0px 1px 7px 0px #272525;
     background: linear-gradient(to top, #bc87df, #54506b);
     border-radius: 50px;
@@ -158,13 +156,13 @@ a {
     display: none;
   }
   .enlacesHamburguesa{
-    background-color: #c2c296;
+    background-color: #d7d7b1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+ 
   #menuHamburg{
     position: absolute;
     width: 40px;
@@ -175,7 +173,12 @@ a {
     left: 18px;
     padding: 2px;
     border-radius: 20px;
-    background-color: #a77ea9;
+    background-color: #c3afbb;
+}
+
+#menuHamburg:hover{
+    box-shadow: 0px 0px 6px 1px #2d154f;
+    background-color: #a3a37a;
 }
 
 .liModal {
@@ -185,6 +188,7 @@ a {
     list-style: none;
     padding: 10px;
 }
+
 .liModal:hover a{
     text-shadow: 1px 0px #54506b;
 }
@@ -198,17 +202,6 @@ a {
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
-}
-
-.tamañoModal {
-    margin: 100px 0px;
-    width:0;
-    height:0;
-}
- 
-.modalmask:target .tamañoModal{
-    width: 200px;
-    height: 270px;
 }
 
 /*Boton de cerrar*/
@@ -240,7 +233,7 @@ a {
     background-color: #e2d8e2;    
     color: #222222;
 }
-/* .menuColapsado,  */
+
 .close{ 
     box-shadow: 0px 0px 10px 1px #2d154f;
     outline: 0;
@@ -250,9 +243,7 @@ a {
     width:30px;
     height: 30px;
 }
-.menuColapsado:hover{
-    box-shadow: 0px 0px 6px 1px #2d154f;
-}
+
  /* Fin menú oculto */
 
 /* Sección header Final */
@@ -353,6 +344,7 @@ button:hover {
     align-items: center;
     padding: 15px 0px 130px 15px;
     min-width: 520px;
+    box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
 h2 {
@@ -393,15 +385,30 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 11px 1px #8b8b3f;
+    overflow: hidden;
 }
 
 .conocimImgTexto:hover {
-    border: 1px solid #6c2ec2;
-    color: #6c2ec2;
+    border: 0.5px solid #7d68a6;
+    color: #6e5b94;
+    text-shadow:1px 1px 1px black;
+    border-radius: 10px;
+}
+
+.icono img {
+    object-fit: cover;
+    padding: 7px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.conocimImgTexto:hover img, .conocimImgTexto:hover h3{
+    transform: scale(1.1);
 }
 
 .conocimImgTexto h3 {
     margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Sección Conocimientos - Final */
@@ -416,11 +423,11 @@ h2 {
     width: 100%;
     height: auto;
     padding: 90px 40px 80px;
-  
-    background-image: url('./imagen/fondo frase 4.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-image: url('./imagen/fondo frase 4.png');
+    background-size: cover; /* El tamaño cubrirá todo el contenedor */
     background-position: center;
     transition: background-image 0.5s;
+    box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
 .mensaje:hover {
@@ -441,22 +448,27 @@ h2 {
     align-items: center;
     position:relative;
 }
+
 .mensaje #clara{
     opacity:0;
     position: relative;
     top: 40px;
 }
+
 .mensaje:hover #clara{
     opacity:1;
 }
+
 .mensaje #oscura{
     position:absolute;
     opacity:1;
     top: 40px;
 }
+
 .mensaje:hover #oscura{
     opacity:0;
 }
+
 .comillas p,
 .proyectos p {
     color: white;
@@ -475,6 +487,7 @@ h2 {
     font-weight: 700;
     margin-top:30px
 }
+
 .comillas h3 {
     font-size: 30px;
     color: white;
@@ -483,10 +496,7 @@ h2 {
     text-shadow: 1px 1px grey;
     position: relative;
     top:12;
-
 }
-
-
 
 /* Sección Cita/Mensaje - Final */
 
@@ -537,12 +547,15 @@ h2 {
     border: 1px solid rgb(220, 210, 224);
     border-radius: 10px;
     margin:10px;
+    box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
 .enlaceProy:hover {
-    border: 1px solid #6c2ec2;
-    color: #6c2ec2;
+    border: 0.5px solid #7d68a6;
+    color: #977dcc;
+    text-shadow:1px 1px 1px black;
     border-radius: 10px;
+    box-shadow: 1px 1px 11px 7px #e0d1d4;
 }
 
 .imagenProyecto {
@@ -552,15 +565,18 @@ h2 {
     height: 100%;
     width: 100%;
     padding: 5px 0px;
-    position: relative;
+    overflow: hidden;
 }
 
 .imagenProyecto img {
-    height: 225px;
+    height: 70%;
     object-fit: cover;
     padding: 7px;
-    position: absolute;
-    top: -15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.proyectoImgTexto:hover img{
+    transform: scale(1.6);
 }
 
 .proyectoImgTexto h3 {
@@ -572,11 +588,14 @@ h2 {
 
 /* Sección Proyectos Final */
 
-/* Seccion Contacto */
+
+/* Sección Contacto */
+
 .contenedorContacto{
     margin: auto;
     background-color: #ebebdb;
     padding: 200px 0px 130px 0px;
+    box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
 #datosContacto {
@@ -589,6 +608,7 @@ h2 {
     border: 1px solid rgb(226, 223, 223);
     border-radius: 20px;
     background-color: white;
+    box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
 #datosContacto h2 {
@@ -655,15 +675,18 @@ h2 {
     color:white;
     border:3px solid #a3a37a;
 }
+
 .redesColor:hover .redes{
     color:#805d82;
     font-weight: 700;
 }
 
+
 /* Formulario de contacto - Inicio */
 .escribime{
     width:auto;
 }
+
 .nombreApellido {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -707,7 +730,6 @@ i {
 
 .ingresoDatos {
     height: inherit;
-    
 }
 
 .icon-valid {
@@ -719,7 +741,6 @@ i {
 }
 
 
-
 /* ingreso formulario - esperando datos - borde lila */
 input:focus,
 textarea:focus,
@@ -728,7 +749,7 @@ button:focus {
     outline: 0;
 }
 
-/* ingreso formulario - */
+/* ingreso formulario */
 input:valid:focus,
 textarea:valid:focus {
     box-shadow: 0px 0px 5px #a3a37a;
@@ -770,8 +791,8 @@ input:valid~.icon-valid,
 input:not(:placeholder-shown):invalid~.icon-invalid {
     display: block;
 }
-input[type="Submit"]{
-   
+
+input[type="Submit"]{   
     border:1px solid #8338ec;
     box-shadow: 0px 1px 7px 0px black;
     background: linear-gradient(to top, #bc87df, #54506b);
@@ -784,16 +805,15 @@ input[type="Submit"]{
     display:flex;
     align-items: center;
     justify-content:center;
-   
 }
+
 input[type="Submit"]:hover{
     background-color: #6c2ec2;
     cursor: pointer;
 }
 
-/* Fin sección Contactame */
-
 /* Formulario de contacto - Final */
+/* Fin sección Contactame */
 
 /* Inicio Footer */
 footer{
@@ -830,8 +850,8 @@ footer{
     height: 80px;
     display:flex;
     justify-content: center;
-    
 }
+
 .iconoRedFooter{
     margin: 25px 10px 45px;
     position: relative;

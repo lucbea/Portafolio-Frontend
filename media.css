@@ -1,4 +1,5 @@
 @media (max-width:970px) and (min-width:700px){
+    
     ul.enlacesInicio {
         display: none;
     }
@@ -32,10 +33,11 @@
         display:flex;
         flex-direction: column;
         justify-content: space-around;
-    }       
+    }     
 }
 
 @media (max-width:699px) and (min-width:500px) {
+    
     ul.enlacesInicio {
         display: none;
     }
@@ -91,6 +93,7 @@
 }
 
 @media (max-width:499px){
+    
     ul.enlacesInicio {
         display: none;
     }
@@ -103,11 +106,15 @@
         flex-direction:column;
     }
 
+    .iconosProyecto{
+        grid-template-columns: 1fr;
+    }
+    
     #datosContacto{
         display:flex;
         flex-direction: column;
     }
-   
+
     .contactame{
         margin-bottom:50px;
     }
@@ -139,7 +146,7 @@
     .contenedorEnlacesFooter{
         display:none;
     }
-    
+
     .contenedorIconosFooter{
         padding-top: 20px;
         height: 100px;
