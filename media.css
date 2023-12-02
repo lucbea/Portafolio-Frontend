@@ -36,7 +36,7 @@
     }     
 }
 
-@media (max-width:699px) and (min-width:500px) {
+@media (max-width:699px) and (min-width:680px) {
     
     ul.enlacesInicio {
         display: none;
@@ -73,11 +73,6 @@
         justify-content: space-around;
     }
 
-    .escribime{
-        width:90%;
-        margin: auto;
-    }
-
     footer{
         height:170px;
     }
@@ -92,7 +87,7 @@
     }
 }
 
-@media (max-width:499px){
+@media (max-width:679px){
     
     ul.enlacesInicio {
         display: none;
@@ -132,11 +127,6 @@
         display:flex;
         flex-direction: column;
         justify-content: space-around;
-    }
-
-    .escribime{
-        width:90%;
-        margin: auto;
     }
 
     footer{
