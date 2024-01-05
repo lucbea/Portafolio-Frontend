@@ -18,9 +18,6 @@
     }
 }
 @media (min-width:500px){
-    body{
-        background-color: rgb(196, 153, 237);
-    }
     .iconosProyecto{
         grid-template-columns: repeat(2, 1fr);
         /* column-count:2; */

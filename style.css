@@ -9,16 +9,15 @@ body {
     width:100vw;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    min-width: 300px;     /* ver antes tenía 320px */
+    min-width: 320px;     /* ver */
     /* width: 100%; */
     background-color: pink;
 }
 
 .contenedor {
     top: 0;
-    /* left: -400px; */
+    left: 0px;
     width: 100%;
-    margin-right:9px;
 }
 
 
@@ -33,7 +32,6 @@ header {
     width: 100%;
     /* width:inherith */
     background-color: linear-gradient(to bottom, #00ff00, #8e44ad);
-    min-width:300px;
 }
 
 nav {
@@ -42,7 +40,6 @@ nav {
     box-shadow: 0px 0px 21px 0px #0000002e;
     /* padding-right: 5%; */
     background: linear-gradient(to bottom, #a3a37a 0%, #FFFFFF 90%, #a3a37a 100%);
-    margin-right:9px;
 }
 
 ul {
@@ -219,8 +216,6 @@ a {
 
 /* Seccion main */
 main {
-   min-width:300px;
-     
     /* display: flex; */
     /* flex-direction: column;
     justify-content: center;
@@ -231,7 +226,6 @@ main {
 section {
     /* width:100%; */
     /* margin: auto; */
-    /* margin-right:9px;  Para centrar contenido sin tener en cuenta la barra de desplazamiento vertical */
 }
 
 .sombraBarraVertical {
@@ -248,9 +242,9 @@ section {
 #hola {
     display: flex;
     flex-direction: column;
-    margin-top: 40%;
-    margin-bottom:25%;
-    padding-inline: 8%;
+    margin-top: 140px;
+    margin-bottom:40px;
+    padding-inline: 20px;
     justify-content: center;
     /* min-width:320px; */
     width: 100%;
@@ -354,12 +348,10 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-block: 14%;
-    padding-inline: 5%;
-    /* min-width: 300px; */
-    width: 90%;
-    margin-inline: auto;
-    /* min-width: 320px; */
+    padding: 15px 20px 130px 20px;
+    min-width:320px;
+    width:100%;
+    min-width:320px;
     /* min-width: 520px; */
     box-shadow: 1px 1px 11px 1px #8b8b3f;
    
@@ -395,10 +387,6 @@ h2 {
     column-gap: 20px;
     padding: 20px 0px;
     /* max-width: 840px; */
-}
-
-.iconoCon{
-    justify-content: center;
 }
 
 .conocimImgTexto {
@@ -449,7 +437,7 @@ h2 {
     /* justify-content: center; */
     /* align-items: center; */
     width: 100%;
-    height: 33rem;
+    height: 500px;
     /* overflow: auto; */
     padding: 30px 20px;
     background-image: url('./imagen/fondo frase 4.png');
@@ -574,10 +562,8 @@ h2 {
     justify-content: center;
     align-items: center;
     /* min-width: 520px; */
-    width: 100%;
+    width: 90%;
     /* margin: auto; */
-    margin-top:2rem;
-    margin-bottom: 4rem;
 }
 
 #proyectos h2 {
@@ -619,7 +605,7 @@ h2 {
 .enlaceProy {
     border: 1px solid rgb(220, 210, 224);
     border-radius: 10px;
-    margin:1rem;
+    margin:10px;
     box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
@@ -667,17 +653,16 @@ h2 {
 .contenedorContacto{
     margin: auto;
     background-color: #ebebdb;
-    padding: 15% 0px 15% 0px;
+    padding: 200px 0px 130px 0px;
     box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
 #datosContacto {
     display:flex;
-    flex-direction: column;
     justify-content: space-between;
     column-gap: 40px;
-    padding: 2rem 1rem;
-    width: 90%;
+    padding: 90px 60px 50px 60px;
+    width: 82%;
     margin: auto;
     border: 1px solid rgb(226, 223, 223);
     border-radius: 20px;
@@ -686,17 +671,16 @@ h2 {
 }
 
 #datosContacto h2 {
-    font-size: 1.8rem;
+    font-size: 45px;
     font-weight: 900;
     padding-bottom: 20px;
     margin: 0px;
-    text-align: center;
 }
 
 .contactame {
     display: flex;
     flex-direction: column;
-    width:98%;
+    width:auto;
 }
 
 .contactame p {
@@ -710,20 +694,11 @@ h2 {
 
 .redesColor {
     color: #8338ec;
-    width: 100%;
+    width: 250px;
     height:min-content;
 }
 
 .redes {
-    /* margin: 4% 0px; */
-    /* width: 98%;
-    height: min-content;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 400;
-    color:rgb(27, 25, 25)w; */
     margin: 10px 0px;
     width: 250px;
     height: min-content;
@@ -736,89 +711,55 @@ h2 {
 }
 
 .iconoRed {
-    /* position: relative;
+    position: relative;
     top: 0px;
-    margin: 5% 7%;
+    margin: 5px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
     width: 40px;
-    border-radius: 50%;
-    background-color: white;
-    font-size: 20px;
-    color: #c076c4; */
-    position: relative;
-    top: 0px;
-    margin: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 0.8rem;
-    width: 1rem;
     border-radius: 50%;
     background-color: white;
     font-size: 20px;
     color: #c076c4;
-
-
-    
-    margin: 5px 15px;
-   
-    height: 40px;
-    width: 40px;
-   
 }
-.icono {
-       width: 100%;
-       display: flex;
-       justify-content: flex-start;
-       align-items: center;
-       /* text-align: start; */
-       /* font-size: 30px; */
-   
-}
-/* i{
-    display:flex;
+.icono{
+    display: flex;
     justify-content: flex-start;
-    font-size: 5rem;
-} */
+    align-items: center;
+}
 .redesColor:hover .iconoRed{
     background-color: #955898;
     color:white;
     border:3px solid #a3a37a;
-
 }
 
 .redesColor:hover .redes{
     color:#805d82;
     font-weight: 700;
-    
 }
 
 
 /* Formulario de contacto - Inicio */
 .escribime{
-    margin-top:10%;
-    /* width:auto; */
+    width:auto;
 }
 
 .nombreApellido {
-    /* display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px; */
+    gap: 20px;
 }
 
 .ingresoDato {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color:rgb(27, 25, 25);
     position: relative;
 }
-
-
 
 input,
 textarea {
@@ -936,13 +877,11 @@ input[type="Submit"]:hover{
 /* Inicio Footer */
 footer{
     width: 100%;
-    /* height: 250px; */
+    height: 250px;
     background-color: #c3afbb;
-    box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
 .contenedorEnlacesFooter{
-    display:none;
    margin:auto;
    margin-inline: auto;
    height: 80px;
@@ -1003,22 +942,21 @@ footer{
 }
 
 .copyrigth{
-    /* width:94%; */
+    width:470px;
     margin: auto;
 }
 
 footer p{
-    font-size: 16px;
-    font-weight: 500;
-    margin: auto;
-    padding-block: 20px;
-    color: white;
-    line-height: 1.5;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    text-shadow: 0px 1px 4px black;
-        
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px 0px 10px;
+        padding: 20px;
+        color: white;
+        line-height: 1.5;
+        display: flex;
+        width: fit-content;
+        margin: auto;   
+        text-shadow: 0px 1px 4px black;
 }
 
 .copyrigth span {
