@@ -6,39 +6,21 @@
 
 body {
     height: 100vh;
+    width:100vw;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    min-width: 524px;
+    font-size: 1rem;
+    min-width: 300px;     /* ver antes tenía 320px */
+    /* width: 100%; */
+    background-color: pink;
 }
 
 .contenedor {
     top: 0;
-    left: 0px;
+    /* left: -400px; */
     width: 100%;
+    margin-right:9px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: calc(100%+40px);
-}
-
-section {
-    width:100%;
-    margin: auto;
-}
-
-.sombraBarraVertical {
-    position: fixed;
-    z-index: 200;
-    top: 0;
-    left: 100%;
-    width: 40px;
-    height: 100%;
-    box-shadow: 0px 0px 40px 0px #000000d9;
-}
 
 
 /* Sección Header Inicio */
@@ -46,28 +28,32 @@ section {
 header {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0; 
     z-index: 100;
-    width: inherit;
+    width: 100%;
+    /* width:inherith */
     background-color: linear-gradient(to bottom, #00ff00, #8e44ad);
+    min-width:300px;
 }
 
 nav {
     height: 80px;
+    width: 100%;
     box-shadow: 0px 0px 21px 0px #0000002e;
-    padding-right: 110px;
+    /* padding-right: 5%; */
     background: linear-gradient(to bottom, #a3a37a 0%, #FFFFFF 90%, #a3a37a 100%);
+    margin-right:9px;
 }
 
 ul {
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
 li {
-    display: flex;
+    display:none;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -102,14 +88,14 @@ a {
 
 .holaInfo .enlaceDestacado a {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 15px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding: 7px 15px; */
     width: 150px;
     background-color: #8338ec;
     border-radius: 50px;
     color: white;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .enlaceNoDestacado {
@@ -153,7 +139,7 @@ a {
 
 /*Formato de la ventana*/
   .modal{
-    display: none;
+    /* display: none; */
   }
   .enlacesHamburguesa{
     background-color: #d7d7b1;
@@ -170,7 +156,7 @@ a {
     display: flex;
     justify-content: center;
     top: 18px;
-    left: 18px;
+    left: 5%;
     padding: 2px;
     border-radius: 20px;
     background-color: #c3afbb;
@@ -213,49 +199,67 @@ a {
     right: 1px;
     text-align: center;
     top: 1px;
-    width: 24px;
+    width: 30px;
+    height: 30px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 3px;
-    color: #FFFFFF;
-    line-height: 25px;
-    position: absolute;
-    right: 1px;
-    text-align: center;
-    top: 1px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius:3px; 
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 1px #2d154f;
+    outline: 0;
+    margin:3px;
+    padding: 4px;  
 }
  
 .close:hover {
     background-color: #e2d8e2;    
     color: #222222;
 }
+/* Fin menú oculto */
+/* Sección header Final */
 
-.close{ 
-    box-shadow: 0px 0px 10px 1px #2d154f;
-    outline: 0;
-    margin:3px;
-    padding: 4px;
-    border-radius: 2px;
-    width:30px;
-    height: 30px;
+/* Seccion main */
+main {
+   min-width:300px;
+     
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* width: 100%; */
 }
 
- /* Fin menú oculto */
+section {
+    /* width:100%; */
+    /* margin: auto; */
+    /* margin-right:9px;  Para centrar contenido sin tener en cuenta la barra de desplazamiento vertical */
+}
 
-/* Sección header Final */
+.sombraBarraVertical {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 100%;
+    width: 40px;
+    height: 100%;
+    box-shadow: 0px 0px 40px 0px #000000d9;
+}
 
 /* Sección Hola - Inicio */
 #hola {
     display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+    margin-bottom:25%;
+    padding-inline: 8%;
     justify-content: center;
-    align-items: center;
-    padding: 220px 40px 80px;
+    /* min-width:320px; */
     width: 100%;
-    column-gap:20px;
+    /* margin-inline:10%; */
+    
+    /* align-items: center; */
+    /* padding: 220px 30px 80px; */
+   
+    /* column-gap:20px; */
 }
 
 .holaInfo {
@@ -263,31 +267,38 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:420px;
+    /* width:420px; */
+    /* margin-inline: auto; */
 }
 
 h1 {
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 10px;
+    margin-inline:20px;
     color: #54506b;
+    text-align: center;
 }
 
 h3{
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 15px; 
+    text-align: center;
 }
 
 p {
+    width: 80%;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    margin: 10px 0px 40px;
+    margin-inline: auto;
+    margin-top: 10px;
+    margin-bottom:40px;
     font-style: inherit;
     color: rgb(100, 98, 98);
     line-height: 1.5;
-    width: 390px;
+    
 }
 
 button {
@@ -317,19 +328,20 @@ button:hover {
 }
 
 .imagen {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-    width: 540px;
+    align-items: center; */
+    
+    width: auto;
+    overflow:hidden;
 }
 
 .imagen img {
     width: 100%;
     height: auto;
-    width: inherit;
-    object-fit: cover;
+    /* width: inherit; */
+    /* object-fit: cover; */
 }
 
 /* Sección Hola - Final */
@@ -342,26 +354,36 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 0px 130px 15px;
-    min-width: 520px;
+    padding-block: 14%;
+    padding-inline: 5%;
+    /* min-width: 300px; */
+    width: 90%;
+    margin-inline: auto;
+    /* min-width: 320px; */
+    /* min-width: 520px; */
     box-shadow: 1px 1px 11px 1px #8b8b3f;
+   
 }
 
 h2 {
-    font-size: 30px;
+    font-size:larger;
     font-weight: 900;
-    margin-top: 100px;
-    margin-bottom: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-inline: 5%;
+    text-align: center;
+    /* margin-top: 100px; */
+    
 }
 
 #conocimientos h2 {
-    font-size: 45px;
+    /* font-size: auto; */
     font-weight: 900;
-    padding: 25px 0px 15px;
+   
 }
 
 #conocimientos p {
-    width: 400px;
+    /* width: 400px; */
 }
 
 .iconosConocim {
@@ -371,12 +393,17 @@ h2 {
     align-items: center;
     row-gap: 20px;
     column-gap: 20px;
-    padding: 20px 10px;
-    max-width: 840px;
+    padding: 20px 0px;
+    /* max-width: 840px; */
+}
+
+.iconoCon{
+    justify-content: center;
 }
 
 .conocimImgTexto {
-    width: 260px;
+    /* width: 260px; */
+    width:96%;
     height: 230px;
     border-radius: 10px;
     background-color: white;
@@ -407,6 +434,7 @@ h2 {
 }
 
 .conocimImgTexto h3 {
+    font-size:larger;     /* cuando se pueda hay que sacarlo  y colocar font-size:30px*/
     margin-top: 20px;
     transition: transform 0.3s ease-in-out;
 }
@@ -418,13 +446,14 @@ h2 {
 .mensaje {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     width: 100%;
-    height: auto;
-    padding: 90px 40px 80px;
+    height: 33rem;
+    /* overflow: auto; */
+    padding: 30px 20px;
     background-image: url('./imagen/fondo frase 4.png');
-    background-size: cover; /* El tamaño cubrirá todo el contenedor */
+    background-size: cover;
     background-position: center;
     transition: background-image 0.5s;
     box-shadow: 1px 1px 11px 1px #8b8b3f;
@@ -441,18 +470,39 @@ h2 {
 }
 
 .comillas {
-    height: 350px;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    /* overflow: hidden; */
+    /* display: flex; */
+    /* flex-direction: column; */
     justify-content: space-between;
-    align-items: center;
-    position:relative;
+    /* align-items: center; */
+    /* position: relative; */
+    padding: 40px 0px;
+    width: 100%;
 }
-
-.mensaje #clara{
-    opacity:0;
+.iconoMensaje{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:300px;
     position: relative;
-    top: 40px;
+    /* background-color: red; */
+    top:-350px;
+    z-index:0;
+ }
+.mensaje #clara{
+       opacity: 0;
+       /* position: absolute; */
+       /* top: 70px; */
+       /* right: 100px; */
+       /* opacity: 0; */
+       /* display: none; */
+       position: relative;
+       top: -10px;
+       display: flex;
+       justify-content: center;
+       /* z-index: -1; */
+       /* right: 300px; */
 }
 
 .mensaje:hover #clara{
@@ -460,15 +510,21 @@ h2 {
 }
 
 .mensaje #oscura{
-    position:absolute;
-    opacity:1;
-    top: 40px;
+    position: relative;
+    opacity: 1;
+    top: -150px;
+    /* right: 100px; */
+    
 }
 
 .mensaje:hover #oscura{
     opacity:0;
 }
-
+/* .cita{
+    height: auto;
+    display: flex;
+    justify-content: center;
+} */
 .comillas p,
 .proyectos p {
     color: white;
@@ -476,27 +532,38 @@ h2 {
     color: #fbf3f3;
     padding: 30px 10px;
     font-size: 20px;
-    font-size: 20px;
+   
 }
 
 .comillas p{
     text-shadow: 1px 1px grey;
-    position: absolute;
-    top:1rem;
-    font-size: 25px;
+    position: relative;
+    /* top: 1rem; */
+    font-size: 22px;
     font-weight: 700;
-    margin-top:30px
+    /* margin-top: 30px; */
+    padding: 0px 0px;
+    z-index:6;
 }
 
 .comillas h3 {
     font-size: 30px;
     color: white;
     font-weight: 900;
-    padding-bottom: 20px;
+    padding-top: 10%;
+    padding-bottom: 15%;
     text-shadow: 1px 1px grey;
     position: relative;
-    top:12;
+    z-index:4;
 }
+/* Revisar esto para que el contenedor tome el tamaño de la cita y su autor  */
+.clearfix:after {
+    content: " "; /* Viejos browser que no soportan contenido vacío */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
 
 /* Sección Cita/Mensaje - Final */
 
@@ -506,9 +573,11 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 520px;
-    width: 84%;
-    margin: auto;
+    /* min-width: 520px; */
+    width: 100%;
+    /* margin: auto; */
+    margin-top:2rem;
+    margin-bottom: 4rem;
 }
 
 #proyectos h2 {
@@ -524,10 +593,14 @@ h2 {
 }
 
 .iconosProyecto {
-    width:100%;
+    /* width:100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin:20px;
+    
+    margin:20px; */
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    margin-inline: auto;
 }
 
 .proyectoImgTexto {
@@ -546,7 +619,7 @@ h2 {
 .enlaceProy {
     border: 1px solid rgb(220, 210, 224);
     border-radius: 10px;
-    margin:10px;
+    margin:1rem;
     box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
@@ -594,16 +667,17 @@ h2 {
 .contenedorContacto{
     margin: auto;
     background-color: #ebebdb;
-    padding: 200px 0px 130px 0px;
+    padding: 15% 0px 15% 0px;
     box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
 #datosContacto {
     display:flex;
+    flex-direction: column;
     justify-content: space-between;
     column-gap: 40px;
-    padding: 90px 60px 50px 60px;
-    width: 82%;
+    padding: 2rem 1rem;
+    width: 90%;
     margin: auto;
     border: 1px solid rgb(226, 223, 223);
     border-radius: 20px;
@@ -612,16 +686,17 @@ h2 {
 }
 
 #datosContacto h2 {
-    font-size: 45px;
+    font-size: 1.8rem;
     font-weight: 900;
     padding-bottom: 20px;
     margin: 0px;
+    text-align: center;
 }
 
 .contactame {
     display: flex;
     flex-direction: column;
-    width:auto;
+    width:98%;
 }
 
 .contactame p {
@@ -635,11 +710,20 @@ h2 {
 
 .redesColor {
     color: #8338ec;
-    width: 250px;
+    width: 100%;
     height:min-content;
 }
 
 .redes {
+    /* margin: 4% 0px; */
+    /* width: 98%;
+    height: min-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color:rgb(27, 25, 25)w; */
     margin: 10px 0px;
     width: 250px;
     height: min-content;
@@ -652,9 +736,9 @@ h2 {
 }
 
 .iconoRed {
-    position: relative;
+    /* position: relative;
     top: 0px;
-    margin: 5px 15px;
+    margin: 5% 7%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -663,44 +747,78 @@ h2 {
     border-radius: 50%;
     background-color: white;
     font-size: 20px;
+    color: #c076c4; */
+    position: relative;
+    top: 0px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0.8rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 20px;
     color: #c076c4;
+
+
+    
+    margin: 5px 15px;
+   
+    height: 40px;
+    width: 40px;
+   
 }
-.icono{
+.icono {
+       width: 100%;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       /* text-align: start; */
+       /* font-size: 30px; */
+   
+}
+/* i{
     display:flex;
     justify-content: flex-start;
-    align-items: center;
-}
+    font-size: 5rem;
+} */
 .redesColor:hover .iconoRed{
     background-color: #955898;
     color:white;
     border:3px solid #a3a37a;
+
 }
 
 .redesColor:hover .redes{
     color:#805d82;
     font-weight: 700;
+    
 }
 
 
 /* Formulario de contacto - Inicio */
 .escribime{
-    width:auto;
+    margin-top:10%;
+    /* width:auto; */
 }
 
 .nombreApellido {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 20px; */
 }
 
 .ingresoDato {
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color:rgb(27, 25, 25);
     position: relative;
 }
+
+
 
 input,
 textarea {
@@ -814,15 +932,17 @@ input[type="Submit"]:hover{
 
 /* Formulario de contacto - Final */
 /* Fin sección Contactame */
-
+/* Fin main */
 /* Inicio Footer */
 footer{
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     background-color: #c3afbb;
+    box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
 .contenedorEnlacesFooter{
+    display:none;
    margin:auto;
    margin-inline: auto;
    height: 80px;
@@ -883,21 +1003,22 @@ footer{
 }
 
 .copyrigth{
-    width:470px;
+    /* width:94%; */
     margin: auto;
 }
 
 footer p{
-        font-size: 16px;
-        font-weight: 500;
-        margin: 0px 0px 10px;
-        padding: 20px;
-        color: white;
-        line-height: 1.5;
-        display: flex;
-        width: fit-content;
-        margin: auto;   
-        text-shadow: 0px 1px 4px black;
+    font-size: 16px;
+    font-weight: 500;
+    margin: auto;
+    padding-block: 20px;
+    color: white;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-shadow: 0px 1px 4px black;
+        
 }
 
 .copyrigth span {

@@ -1,144 +1,44 @@
-@media (max-width:970px) and (min-width:700px){
-    
-    ul.enlacesInicio {
-        display: none;
+@media (min-width:350px){
+    body{
+        background-color: rgb(185, 213, 85);
     }
-
-    .modal{
-        display: block;
+    .iconosConocimientos{
+        column-count: 2;
     }
-
-    #hola{
-        flex-direction:column;
+    .conocimImgTexto { 
+        width: 46%;
+        /* width:%; */
     }
-
+    .iconosProyecto{
+        /* grid-template-columns: repeat(2, 1fr); */
+        column-count:2;
+    }
+    .enlaceProy {
+        width: 90%;
+    }
+}
+@media (min-width:500px){
+    body{
+        background-color: rgb(196, 153, 237);
+    }
     .iconosProyecto{
         grid-template-columns: repeat(2, 1fr);
+        /* column-count:2; */
     }
-
-    #datosContacto{
-        display:flex;
-        flex-direction: column;
-    }
-   
-    .contactame{
-        margin-bottom:50px;
-    }
-
-    .redesColor{
-        height: auto;
-    }
-    
-    .iconosRedes{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }     
 }
-
-@media (max-width:699px) and (min-width:680px) {
-    
-    ul.enlacesInicio {
-        display: none;
+@media (min-width:970px) {
+    ul{
+        justify-content: flex-end;
+    }
+    li{
+        display: flex;
+        
     }
 
     .modal{
-        display: block;
-    }
-
-    #hola{
-        flex-direction:column;
-    }
-
-    .iconosProyecto{
-        grid-template-columns: 1fr;
-    }
-
-    #datosContacto{
-        display:flex;
-        flex-direction: column; 
-    }
-   
-    .contactame{
-        margin-bottom:50px;
-    }
-
-    .redesColor{
-        height: auto;
-    }
-    
-    .iconosRedes{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    footer{
-        height:170px;
-    }
-
-    .contenedorEnlacesFooter{
-        display:none;
-    }
-
-    .contenedorIconosFooter{
-        padding-top: 20px;
-        height: 100px;
-    }
-}
-
-@media (max-width:679px){
-    
-    ul.enlacesInicio {
         display: none;
-    }
-
-    .modal{
-        display: block;
-    }
-
-    #hola{
-        flex-direction:column;
-    }
-
-    .iconosProyecto{
-        grid-template-columns: 1fr;
-    }
-    
-    #datosContacto{
-        display:flex;
-        flex-direction: column;
-    }
-
-    .contactame{
-        margin-bottom:50px;
-    }
-
-    .nombreApellido{
-        display:flex;
-        flex-direction:column;
-    }
-
-    .redesColor{
-        height: auto;
-    }
-    
-    .iconosRedes{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    footer{
-        height:170px;
-    }
-
-    .contenedorEnlacesFooter{
-        display:none;
-    }
-
-    .contenedorIconosFooter{
-        padding-top: 20px;
-        height: 100px;
+      }
+      body{
+        background-color: rgb(253, 253, 253);
     }
 }
