@@ -9,15 +9,16 @@ body {
     width:100vw;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    min-width: 320px;     /* ver */
+    min-width: 300px;     /* ver antes tenía 320px */
     /* width: 100%; */
-    background-color: pink;
+   
 }
 
 .contenedor {
     top: 0;
-    left: 0px;
+    /* left: -400px; */
     width: 100%;
+    margin-right:9px;
 }
 
 
@@ -32,6 +33,7 @@ header {
     width: 100%;
     /* width:inherith */
     background-color: linear-gradient(to bottom, #00ff00, #8e44ad);
+    min-width:300px;
 }
 
 nav {
@@ -40,6 +42,7 @@ nav {
     box-shadow: 0px 0px 21px 0px #0000002e;
     /* padding-right: 5%; */
     background: linear-gradient(to bottom, #a3a37a 0%, #FFFFFF 90%, #a3a37a 100%);
+    margin-right:9px;
 }
 
 ul {
@@ -50,11 +53,16 @@ ul {
 }
 
 li {
-    display:none;
+    display:flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     padding: 10px 10px;
+}
+
+.enlacesInicio li{
+    display:none;
+    margin-right:30px;
 }
 
 a {
@@ -85,10 +93,10 @@ a {
 
 .holaInfo .enlaceDestacado a {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* padding: 7px 15px; */
-    width: 150px;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 15px; 
+    width: 200px;
     background-color: #8338ec;
     border-radius: 50px;
     color: white;
@@ -216,6 +224,8 @@ a {
 
 /* Seccion main */
 main {
+   min-width:300px;
+     
     /* display: flex; */
     /* flex-direction: column;
     justify-content: center;
@@ -223,10 +233,11 @@ main {
     /* width: 100%; */
 }
 
-section {
+/* section { */
     /* width:100%; */
     /* margin: auto; */
-}
+    /* margin-right:9px;  Para centrar contenido sin tener en cuenta la barra de desplazamiento vertical */
+/* } */
 
 .sombraBarraVertical {
     position: fixed;
@@ -242,9 +253,9 @@ section {
 #hola {
     display: flex;
     flex-direction: column;
-    margin-top: 140px;
-    margin-bottom:40px;
-    padding-inline: 20px;
+    margin-top: 40%;
+    margin-bottom:25%;
+    padding-inline: 8%;
     justify-content: center;
     /* min-width:320px; */
     width: 100%;
@@ -266,12 +277,13 @@ section {
 }
 
 h1 {
+    text-align: center;
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 10px;
     margin-inline:20px;
     color: #54506b;
-    text-align: center;
+    
 }
 
 h3{
@@ -299,7 +311,7 @@ button {
     display: flex;
     align-items: center;
     width: auto;
-    height: 50px;
+    height: 500px;
     margin-bottom: 40px;
     padding: 18px 40px;
     border-radius: 50px;
@@ -320,7 +332,10 @@ button:hover {
     cursor: pointer;
     box-shadow: 0px 1px 5px 0px #3f3b3ba1;
 }
-
+/* a.botonFinalHola{
+    width:700px;
+    background-color: green;
+} */
 .imagen {
     /* display: flex;
     flex-direction: column;
@@ -348,10 +363,12 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 20px 130px 20px;
-    min-width:320px;
-    width:100%;
-    min-width:320px;
+    padding-block: 14%;
+    padding-inline: 5%;
+    /* min-width: 300px; */
+    width: 90%;
+    margin-inline: auto;
+    /* min-width: 320px; */
     /* min-width: 520px; */
     box-shadow: 1px 1px 11px 1px #8b8b3f;
    
@@ -369,7 +386,7 @@ h2 {
 }
 
 #conocimientos h2 {
-    /* font-size: auto; */
+    font-size: 30px;
     font-weight: 900;
    
 }
@@ -389,9 +406,15 @@ h2 {
     /* max-width: 840px; */
 }
 
+.iconoCon{
+    justify-content: center;
+}
+
 .conocimImgTexto {
     /* width: 260px; */
     width:96%;
+    min: width 160px;
+    /* max-width: 230px; */
     height: 230px;
     border-radius: 10px;
     background-color: white;
@@ -418,7 +441,7 @@ h2 {
 }
 
 .conocimImgTexto:hover img, .conocimImgTexto:hover h3{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .conocimImgTexto h3 {
@@ -430,14 +453,17 @@ h2 {
 /* Sección Conocimientos - Final */
 
 /* Sección Cita/Mensaje - Inicio */
-
+.mensaje, .comillas {
+    /* display:block; */
+    /* position:relative; */
+}
 .mensaje {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 500px;
+    height: 33rem;
     /* overflow: auto; */
     padding: 30px 20px;
     background-image: url('./imagen/fondo frase 4.png');
@@ -445,6 +471,7 @@ h2 {
     background-position: center;
     transition: background-image 0.5s;
     box-shadow: 1px 1px 11px 1px #8b8b3f;
+    /* position:relative; */
 }
 
 .mensaje:hover {
@@ -458,52 +485,60 @@ h2 {
 }
 
 .comillas {
-    height: 100%;
+       /* height: 100%; */
     /* overflow: hidden; */
     /* display: flex; */
     /* flex-direction: column; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* align-items: center; */
     /* position: relative; */
-    padding: 40px 0px;
-    width: 100%;
+    padding: 50px 0px;
+    /* width: 100%; */
 }
+
 .iconoMensaje{
     display:flex;
     justify-content:center;
     align-items: center;
-    height:300px;
-    position: relative;
+    /* height:300px; */
+    /* position: relative; */
     /* background-color: red; */
-    top:-350px;
-    z-index:0;
+    /* top:-350px; */
+    z-index:45;
  }
-.mensaje #clara{
-       opacity: 0;
+.mensaje .comi{
+       /* opacity: 0; */
        /* position: absolute; */
-       /* top: 70px; */
+       /* top: -80px; */
        /* right: 100px; */
        /* opacity: 0; */
        /* display: none; */
-       position: relative;
-       top: -10px;
+       /* position: relative; */
+       /* top: -10px; */
        display: flex;
-       justify-content: center;
-       /* z-index: -1; */
+       justify-content: space-around;
+       align-content: center;
+       z-index: 45;
        /* right: 300px; */
 }
 
+#clara{
+    opacity:0;
+}
+#oscura{
+    opacity:1;
+}
 .mensaje:hover #clara{
     opacity:1;
 }
 
-.mensaje #oscura{
-    position: relative;
-    opacity: 1;
-    top: -150px;
+/* .mensaje #oscura{
+    /* position: absolute; */
+    /* opacity: 1;
+    top: 0px; */
     /* right: 100px; */
     
-}
+/* }  */
 
 .mensaje:hover #oscura{
     opacity:0;
@@ -538,8 +573,8 @@ h2 {
     font-size: 30px;
     color: white;
     font-weight: 900;
-    padding-top: 10%;
-    padding-bottom: 15%;
+    /* padding-top: 10%; */
+    /* padding-bottom: 15%; */
     text-shadow: 1px 1px grey;
     position: relative;
     z-index:4;
@@ -562,12 +597,14 @@ h2 {
     justify-content: center;
     align-items: center;
     /* min-width: 520px; */
-    width: 90%;
+    width: 100%;
     /* margin: auto; */
+    margin-top:2rem;
+    margin-bottom: 4rem;
 }
 
 #proyectos h2 {
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 900;
     padding: 25px 0px 15px;
 }
@@ -605,7 +642,7 @@ h2 {
 .enlaceProy {
     border: 1px solid rgb(220, 210, 224);
     border-radius: 10px;
-    margin:10px;
+    margin:1rem;
     box-shadow: 1px 1px 11px 1px #8b8b3f;
 }
 
@@ -651,18 +688,19 @@ h2 {
 /* Sección Contacto */
 
 .contenedorContacto{
-    margin: auto;
-    background-color: #ebebdb;
-    padding: 200px 0px 130px 0px;
-    box-shadow: 1px 1px 11px 1px #8b8b3f;
+      /* margin: auto; */
+      background-color: #ebebdb;
+      padding: 15% 0px;
+      box-shadow: 0px 3px 16px 4px #8b8b3f;
 }
 
 #datosContacto {
-    display:flex;
-    justify-content: space-between;
-    column-gap: 40px;
-    padding: 90px 60px 50px 60px;
-    width: 82%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* column-gap: 40px; */
+    padding: 2rem 1rem;
+    width: 90%;
     margin: auto;
     border: 1px solid rgb(226, 223, 223);
     border-radius: 20px;
@@ -671,34 +709,51 @@ h2 {
 }
 
 #datosContacto h2 {
-    font-size: 45px;
+    font-size: 1.8rem;
     font-weight: 900;
     padding-bottom: 20px;
-    margin: 0px;
+    /* padding-left: 35px; */
+    text-align: left;
+    padding-inline: 0px;
+    margin:0px;
 }
 
 .contactame {
     display: flex;
+    justify-content: start;
+    align-items: flex-start;
     flex-direction: column;
-    width:auto;
+    width: 96%;
+    margin-inline: auto;
 }
 
 .contactame p {
     text-align: left;
     font-size: 16px;
     font-weight: 500;
-    margin: 0px 0px 20px;
+    /* margin: 0px 35px 20px; */
     color: rgb(36, 36, 36);
-    width:auto;
+    /* width:auto; */
+    padding-bottom:15px;
+    margin:0px;
 }
-
+/* .iconosRedes{} */
 .redesColor {
     color: #8338ec;
-    width: 250px;
+    width: 100%;
     height:min-content;
 }
 
 .redes {
+    /* margin: 4% 0px; */
+    /* width: 98%;
+    height: min-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color:rgb(27, 25, 25)w; */
     margin: 10px 0px;
     width: 250px;
     height: min-content;
@@ -711,9 +766,9 @@ h2 {
 }
 
 .iconoRed {
-    position: relative;
+    /* position: relative;
     top: 0px;
-    margin: 5px 15px;
+    margin: 5% 7%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -722,47 +777,96 @@ h2 {
     border-radius: 50%;
     background-color: white;
     font-size: 20px;
-    color: #c076c4;
-}
-.icono{
+    color: #c076c4; */
+    /* position: relative; */
+    top: 0px;
+    /* margin-block: 1rem; */
+    /* margin-inline:0px; */
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: center;
+    height: 0.8rem;
+    /* width: 1rem; */
+    border-radius: 50%;
+    background-color: white;
+    font-size: 20px;
+    color: #c076c4;
+
+
+    
+    margin: 5px 15px;
+   
+    height: 40px;
+    width: 40px;
+   
 }
+.icono {
+       width: 100%;
+       display: flex;
+         align-items: center;
+       /* justify-content: flex-start; */
+     
+       /* text-align: start; */
+       /* font-size: 30px; */
+   
+}
+.redesColor a{
+    margin:0px;
+    padding: 0px;
+}
+ i{
+    /* display:flex; */
+    /* justify-content: flex-start; */
+    /* font-size: 5rem;    CUIDADO!!! modifica menu hamburguesa */ 
+} 
 .redesColor:hover .iconoRed{
     background-color: #955898;
     color:white;
     border:3px solid #a3a37a;
+
 }
 
 .redesColor:hover .redes{
     color:#805d82;
     font-weight: 700;
+    
 }
 
 
 /* Formulario de contacto - Inicio */
 .escribime{
-    width:auto;
+    margin-inline: auto;
+    /* display: flex; */
+    flex-direction: column;
+    width: 96%;
+    margin-top: 10%;
+    /* width: auto; */
+
+
+
+   
 }
 
 .nombreApellido {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 20px; */
 }
 
 .ingresoDato {
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color:rgb(27, 25, 25);
     position: relative;
 }
 
+
+
 input,
 textarea {
+    width:100%;
     height: 30px;
     font-family: Montserrat, sans-serif;
     text-align: left;
@@ -869,6 +973,11 @@ input[type="Submit"]{
 input[type="Submit"]:hover{
     background-color: #6c2ec2;
     cursor: pointer;
+   
+        color: white;
+        background: linear-gradient(to top, #54506b, #bc87df);
+        box-shadow: 0px 1px 2px 0px #272525;
+    
 }
 
 /* Formulario de contacto - Final */
@@ -877,23 +986,26 @@ input[type="Submit"]:hover{
 /* Inicio Footer */
 footer{
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     background-color: #c3afbb;
+    box-shadow: 0px 0px 3px 2px #8b8b3f;
 }
 
 .contenedorEnlacesFooter{
+   /* display:none; */
    margin:auto;
    margin-inline: auto;
-   height: 80px;
+   /* height: 80px;    Agregarlo cuando tenga que aparecer el contenedor*/
 }
 
 #enlacesFooter{
+    display:none;
     width:630px;
     margin:auto;
 }
 
 #enlacesFooter a{
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     margin: 30px 0px 0px;
     padding: 4px 25px;
@@ -942,21 +1054,22 @@ footer{
 }
 
 .copyrigth{
-    width:470px;
+    /* width:94%; */
     margin: auto;
 }
 
 footer p{
-        font-size: 16px;
-        font-weight: 500;
-        margin: 0px 0px 10px;
-        padding: 20px;
-        color: white;
-        line-height: 1.5;
-        display: flex;
-        width: fit-content;
-        margin: auto;   
-        text-shadow: 0px 1px 4px black;
+    font-size: 16px;
+    font-weight: 500;
+    margin: auto;
+    padding-block: 20px;
+    color: white;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-shadow: 0px 1px 4px black;
+        
 }
 
 .copyrigth span {

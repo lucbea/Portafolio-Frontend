@@ -1,41 +1,497 @@
-@media (min-width:350px){
-    body{
-        background-color: rgb(185, 213, 85);
+@media (min-width:350px) and (max-width:449px) {
+   
+    #conocimientos h2, #proyectos h2{
+        font-size: 23px;
     }
-    .iconosConocimientos{
+    .mensaje{
+        /* display:flex; */
+        /* position:relative; */
+    }
+    .mensaje #clara{
+        /* display:flex; */
+        position:absolute;
+        /* top:40px; */
+        top:0px;
+    
+    }
+
+    .mensaje #oscura{
+        position:absolute;
+        /* top:40px; */
+        top:0px;
+    }
+    .iconosConocim{
+        width:100%;
+        max-width:700px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* .iconosConocimientos {
+        
+        column-count: 2;
+    } */
+
+    /* .conocimImgTexto {
+        width: 46%;
+
+    } */
+
+    /* .iconosProyecto {
+        
         column-count: 2;
     }
-    .conocimImgTexto { 
-        width: 46%;
-        /* width:%; */
+
+    .enlaceProy {
+        width: 90%;
+    } */
+    #datosContacto h2 {
+        padding-left:25px;
     }
-    .iconosProyecto{
+    .contactame p{
+        padding-inline: 25px;
+    }
+    form{
+        padding-inline: 25px;
+    }
+}
+
+@media (min-width:450px) and (max-width:549px) {
+    
+    #hola {
+        margin-block: 10rem;
+        padding-inline:0px;
+    }
+    .imagen{
+        padding-inline:8%;
+    }
+    #conocimientos h2, #proyectos h2{
+        font-size: 30px;
+    }
+    .iconosConocimientos {
+        /* column-count: 2; */
+        /* grid-template-columns: repeat(2, 1fr);  */
+    }
+    
+
+    .conocimImgTexto {
+        width: 46%;
+
+    }
+    .letrasMensaje{
+        width:100%;
+    }
+    .letrasMensaje p {
+        font-size: 28px;
+        /* margin:0px; */
+
+    }
+    .comillas{
+           /* padding-block: 60px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 100%;
+    
+
+    }
+    
+    .comillas h3 {
+        font-size: 28px;
+        /* padding-top:80px; */
+    }
+
+    .mensaje #clara {
+       
+        display: flex;
+        top: -10px;
+        justify-content: center;
+
+    }
+
+    .mensaje #oscura {
+        top: -150px;
+    }
+
+    /* .iconosProyecto { */
         /* grid-template-columns: repeat(2, 1fr); */
-        column-count:2;
+        /* column-count: 2;
+    } */
+
+   
+    #datosContacto{
+        padding-block:3rem;
+    }
+    #datosContacto h2 {
+        padding-left:25px;
+    }
+    .contactame p{
+        padding-inline: 25px;
+    }
+    form{
+        padding-inline: 25px;
+    }
+    .redesColor {
+        flex: 1;
+    }
+
+}
+
+@media (min-width:550px) and (max-width:699px) {
+   
+    #hola {
+        margin-block: 10rem;
+        padding-inline: 20px;
+    }
+    .iconosConocim{
+        width:100%;
+        max-width:700px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .comillas{
+        display:flex;
+        justify-content:space-around
+    }
+    .letrasMensaje p {
+        font-size: 38px;
+
+    }
+
+    .comillas h3 {
+        font-size: 33px;
+    }
+    .mensaje{
+        display:flex;
+        flex-direction:column;
+    }
+    .mensaje #clara {
+        top: -120px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .mensaje #oscura {
+        top: -260px;
+    }
+
+    .iconosProyecto {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* margin-inline: auto; */
     }
     .enlaceProy {
         width: 90%;
+        margin-inline: auto;
+        /* max-width: 300px; */
+        /* margin: 1rem; */
     }
-}
-@media (min-width:500px){
-    .iconosProyecto{
+    #datosContacto{
+        padding-block:4rem;
+    }
+    #datosContacto h2 {
+        padding-left:25px;
+    }
+    .contactame p{
+        padding-inline: 25px;
+    }
+     .iconosRedes {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* column-count:2; */
+        column-gap: 20px;
+        width: 100%;
     }
+    form{
+        padding-inline: 25px;
+    }
+    .nombreApellido {
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+            width:100%;
+       
+    }
+    
 }
-@media (min-width:970px) {
-    ul{
+@media (min-width:700px) and (max-width:899px){
+    #hola {
+        margin-block: 10rem;
+        padding-inline: 20px;
+    }
+    .iconosConocim{
+        width:100%;
+        max-width:700px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .iconosProyecto {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* margin-inline: auto; */
+    }
+    .enlaceProy {
+        width: 90%;
+        margin-inline: auto;
+        /* max-width: 300px; */
+        /* margin: 1rem; */
+    }
+    
+    #datosContacto{
+        padding-block:5rem;
+    }
+    #datosContacto h2 {
+        padding-left:25px;
+    }
+    .contactame p{
+        padding-inline: 25px;
+    }
+     .iconosRedes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        width: 100%;
+    }
+    form{
+        padding-inline: 25px;
+    }
+    .nombreApellido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        width:100%;
+       
+    }
+
+
+
+
+
+
+
+    .contenedorEnlacesFooter{
+        display:block;
+        height: 80px;   
+    }
+     
+     #enlacesFooter{
+        display: flex;
+        justify-content: center;
+     }
+}
+
+@media (min-width:900px) {
+
+    .enlaceDestacado a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        background-color: rgb(131, 56, 236);
+        border-radius: 50px;
+        color: white;
+        /* margin-bottom: 40px; */
+    }
+
+   #conocimientos h2,
+    #proyectos h2{
+        margin:0px;
+        padding-top:80px;
+        padding-bottom: 40px;
+        font-size: 50px;
+        
+    }
+.iconosConocim{
+    width:100%;
+    max-width:700px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+    .iconocConocim, .enlaceProy {
+        width: 90%;
+        margin-inline: auto;
+        /* min-width: 300px; */
+        /* margin: 1rem; */
+    }
+    .contenedorEnlacesFooter {
+        display: block;
+    }
+    ul {
         justify-content: flex-end;
     }
-    li{
+
+    .enlacesInicio li {
         display: flex;
+        align-content: center;
+    }
+
+    .modal {
+        display: none;
+    }
+
+    
+
+    #hola {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 9rem;
+        margin-bottom: 5rem;
+        padding-inline: 5%;
+    }
+
+    .holaInfo {
+        /* justify-content: start; */
+        align-items: start;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 60px;
+        text-align: start;
+        margin-inline: 0px;
+        /* font-size: 100%; */
+    }
+
+    .comentario p {
+        /* display:block; */
+        width:100%;
+        text-align: start;
+        font-size: 18px;
+        margin-inline:0px;
         
     }
 
-    .modal{
-        display: none;
-      }
-      body{
-        background-color: rgb(253, 253, 253);
+    /* .botonFinalHola {
+        /* display: block; */
+        /* align-items: center; */
+        /* justify-content: center;
+        padding: 15px 20px;
+        width: 250px;
+        background-color: #8338ec;
+        border-radius: 50px;
+        color: white;
+        margin-bottom: 40px; */
+    /* }  */
+
+    .comillas p {
+        width: 85%;
+        font-size: 50px;
+        /* text-align: left; */
+        margin-left: 0px;
     }
+
+    #conocimientos {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    h2 {
+        font-size: 50px;
+
+    }
+
+    #conocimientos p {
+        width: 100%;
+        text-align: center;
+        margin-inline: 0px;
+    }
+    .mensaje{
+        height: 600px;
+    }
+    .letrasMensaje {
+        width: 800px;
+        margin-inline: auto;
+    }
+
+    .letrasMensaje p {
+        font-size: 40px;
+
+    }
+
+    .comillas h3 {
+        font-size: 40px;
+    }
+
+    /* .mensaje #clara {
+        top: -120px;
+        display: flex;
+        justify-content: center;
+        /* z-index: -1; */
+        /* right: 300px; */
+    /* } */
+
+    .mensaje #oscura {
+        top: -260px;
+    } 
+#proyectos{
+    margin-top:90px;
+    margin-bottom:120px;
+}
+.contenedorIconosProyecto{
+    width:90%;
+}
+    /* .iconosProyecto { */
+        /* display:grid; */
+        /* width:100%; */
+        /* margin:auto; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* margin-inline: auto; */
+    /* } */
+
+   
+     .iconosProyecto {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* margin-inline: auto; */
+    }
+.contenedorContacto{
+    padding:120px 0px;
+}
+    #datosContacto {
+        /* display: flex; */
+        flex-direction: row;
+        padding: 5rem 3.5rem;
+    }
+    #datosContacto h2 {
+        font-size: 2.8rem;
+    }
+.contactame{
+    margin-inline: 30px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 80%;
+    margin-top: 30px;
+    /* width: auto; */
+}
+.escribime{
+    margin-inline: 30px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 80%;
+    margin-top: 30px;
+    
+    /* width: auto; */
+}
+form{
+    width:100%;
+}
+.nombreApellido{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+        /* margin-inline: auto; */
+        gap:20px;
+}
+    .contenedorEnlacesFooter{
+        display:block;
+        height: 80px;   
+    }
+     
+     #enlacesFooter{
+         display:flex;
+         justify-content: center;
+     }
 }
