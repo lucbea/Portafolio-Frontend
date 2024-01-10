@@ -9,16 +9,16 @@
     }
     .mensaje #clara{
         /* display:flex; */
-        position:absolute;
+        /* position:absolute; */
         /* top:40px; */
-        top:0px;
+        /* top:0px; */
     
     }
 
     .mensaje #oscura{
-        position:absolute;
+        /* position:absolute; */
         /* top:40px; */
-        top:0px;
+        /* top:0px; */
     }
     .iconosConocim{
         width:100%;
@@ -78,7 +78,7 @@
 
     }
     .letrasMensaje{
-        width:100%;
+        /* width:100%; */
     }
     .letrasMensaje p {
         font-size: 28px;
@@ -87,11 +87,11 @@
     }
     .comillas{
            /* padding-block: 60px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
     /* align-items: center; */
-    width: 100%;
+    /* width: 100%; */
     
 
     }
@@ -103,14 +103,14 @@
 
     .mensaje #clara {
        
-        display: flex;
-        top: -10px;
-        justify-content: center;
+        /* display: flex; */
+        /* top: -10px; */
+        /* justify-content: center; */
 
     }
 
     .mensaje #oscura {
-        top: -150px;
+        /* top: -150px; */
     }
 
     /* .iconosProyecto { */
@@ -150,8 +150,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .comillas{
-        display:flex;
-        justify-content:space-around
+        /* display:flex; */
+        /* justify-content:space-around */
     }
     .letrasMensaje p {
         font-size: 38px;
@@ -162,18 +162,18 @@
         font-size: 33px;
     }
     .mensaje{
-        display:flex;
-        flex-direction:column;
+        /* display:flex; */
+        /* flex-direction:column; */
     }
     .mensaje #clara {
-        top: -120px;
-        display: flex;
-        justify-content: center;
+        /* top: -120px; */
+        /* display: flex; */
+        /* justify-content: center; */
 
     }
 
     .mensaje #oscura {
-        top: -260px;
+        /* top: -260px; */
     }
 
     .iconosProyecto {
@@ -225,6 +225,14 @@
         max-width:700px;
         display:grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .letrasMensaje p {
+        font-size: 42px;
+
+    }
+
+    .comillas h3 {
+        font-size: 36px;
     }
     .iconosProyecto {
         display:grid;
@@ -377,12 +385,7 @@
         margin-bottom: 40px; */
     /* }  */
 
-    .comillas p {
-        width: 85%;
-        font-size: 50px;
-        /* text-align: left; */
-        margin-left: 0px;
-    }
+  
 
     #conocimientos {
         padding-top: 60px;
@@ -408,13 +411,20 @@
     }
 
     .letrasMensaje p {
-        font-size: 40px;
+        font-size: 46px;
 
     }
 
-    .comillas h3 {
+    .letrasMensaje h3 {
         font-size: 40px;
     }
+    
+    /* .letrasMensaje p {
+        font-size: 38px;
+
+    } */
+
+   
 
     /* .mensaje #clara {
         top: -120px;
@@ -425,7 +435,7 @@
     /* } */
 
     .mensaje #oscura {
-        top: -260px;
+        /* top: -260px; */
     } 
 #proyectos{
     margin-top:90px;
